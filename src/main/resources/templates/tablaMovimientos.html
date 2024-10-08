@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" >
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet"  href="/movimientos.css">
+</head>
+<body>
+	<h1> TODOS LOS MOVIMIENTOS</h1>
+	
+	<h3>Numero de cuenta : <span th:text="${session.cuenta.idCuenta}"></span></h3>
+	<h3>Saldo de cuenta : <span th:text="${session.cuenta.saldo}"></span></h3>
+	<table>
+		<tr>
+			<th>Cantidad</th>
+			<th>Fecha</th>
+			<th>Tipo</th>
+		</tr>
+		<tr th:each="movimiento : ${movimientos}">
+			<td th:text="${movimiento.cantidad}"></td>
+			<td th:text="${movimiento.fecha}"></td>
+			<td th:text="${movimiento.operacion}"></td> 
+		</tr>
+	</table>
+	<p><a th:href="@{/home}">Volver home</a></p>
+</body>
+</html>

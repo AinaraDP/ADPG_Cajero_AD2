@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet"  href="/ingresar.css">
+</head>
+<body>
+	<h1>TRANSFERENCIA</h1>
+	<div class="transferencia">
+		<h3>Mensaje : <span th:text="${mensaje}"></span></h3>
+		<form th:action="@{/transferencia}" method="post">
+			<label for="cantidad">Cantidad a ingresar</label>
+			<input id="cantidad" name="cantidad" type="text">
+			<br>
+			<br>
+			<label for="idCuenta">Cuenta de destino</label>
+			<input id="destino" name="idCuenta" type="text">
+			
+			</br>
+			<p><input type="submit" value="transferir"></p>
+			
+			<p><a th:href="@{/home}">Volver home</a></p>
+		</form>
+	</div>
+</body>
+</html>

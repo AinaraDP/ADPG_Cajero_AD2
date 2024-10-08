@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+body{
+	background-color: rgb(202, 251, 255);
+	background-image: url('/sakura.png');
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	display: grid;
+	justify-content: center;
+	text-align: center;
+
+}
+
+h1{
+	margin-top: 50px;
+	font-family: 'Courier New', Courier, monospace;
+	text-decoration: overline underline;
+}
+
+.ingresar{
+	box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.5);
+	margin-top: 100px;
+	background-color: rgba(255,255,255, 0.5);
+	border: 2px groove;
+	width: 400px;
+}
+
+.extraer{
+	box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.5);
+	background-color: rgba(255,255,255, 0.5);
+	border: 2px groove;
+	width: 400px;
+	margin-top: 100px;
+}
+
+.transferencia{
+	box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.5);
+	background-color: rgba(255,255,255, 0.5);
+	border: 2px groove;
+	width: 400px;
+	margin-top: 100px;
+}
+
+.iniciar{
+	box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.5);
+	background-color: rgba(255,255,255, 0.5);
+	border: 2px groove;
+	width: 600px;
+	margin-top: 100px;
+	
+}
+
+body img{
+	filter: blur(5px);
+}
+
+
+
+span{
+	color: crimson;
+}
+a{	
+	background-color: rgb(232, 232, 232);
+	padding: 5px;
+	border-radius: 20%;
+	border: 2px solid rgb(100, 100, 100);
+	transition: background-color 0.3s ease;
+	transition: transform 0.1s ease;
+	display: inline-block;
+	text-decoration: none;
+	margin-top: 20px;
+}
+
+a:hover{
+	background-color: rgb(204, 255, 240);
+	color: black;
+	transform: scale(1.05 );
+}

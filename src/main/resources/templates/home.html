@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home</title>
+<link rel="stylesheet"  href="/home.css">
+</head>
+<body>
+	<h1>Bienvenido al menú de Bankio</h1>
+	<div class="borde">
+		<h3>Mensaje : <span th:text="${mensaje}"></span></h3>
+		<h3>Usuario : </h3>
+		
+		<div class="menu">
+			<a th:href="@{/ingresar}">Ingresar</a>
+			<p><a th:href="@{/extraer}">Extraer</a></p>
+			<p><a th:href="@{/movimientos/{idCuenta}(idCuenta=${session.cuenta.idCuenta})}">Ver movimientos</a></p>
+			<p><a th:href="@{/transferencia}">transferencia</a></p>
+		</div>
+		<br>
+		<hr>
+		<p class="cerrar"><a class="textoCerrar" th:href="@{/logout}">Cerrar Sesion</a></p>
+	</div>
+</body>
+</html>

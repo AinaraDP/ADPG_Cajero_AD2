@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet"  href="/ingresar.css">
+</head>
+<body>
+	<h1>INGRESAR</h1>
+	<div class="ingresar">
+		<h3>Mensaje : <span th:text="${mensaje}"></span></h3>
+		<form th:action="@{/ingresar}" method="post">
+			<label for="cantidad">Introduce cantidad a ingresar</label>
+			<input id="cantidad" name="cantidad" type="text">
+			</br>
+			<p><input type="submit" value="ingresar"></p>
+		</form>
+		<p><a th:href="@{/home}">Volver home</a></p>
+	</div>
+</body>
+</html>

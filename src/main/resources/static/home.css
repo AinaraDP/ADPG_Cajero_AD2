@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+body{
+	background-color: rgb(202, 251, 255);
+	background-image: url('/sakura.png');
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	
+}
+
+body img{
+	filter: blur(5px);
+}
+.borde{
+	width: 350px; 
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #000; 
+    padding: 10px;
+    background-color: rgba(255,255,255, 0.5);
+    
+}
+
+.borde h3{
+	text-align: center;
+}
+
+.borde a{
+	
+	background-color: rgb(232, 232, 232);
+	padding: 5px;
+	border-radius: 20%;
+	border: 2px solid rgb(100, 100, 100);
+	transition: background-color 0.3s ease;
+	transition: transform 0.1s ease;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.borde a:hover{
+	background-color: rgb(204, 255, 240);
+	color: black;
+	transform: scale(1.05 );
+	
+}
+
+.cerrar{
+	margin-top: 50px;
+	text-align: center;
+
+}
+
+.menu a{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.textoCerrar{
+	font-family: fantasy, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-style: italic;
+	color: rgb(0, 0, 0);
+}
+
+h1{
+	text-align: center;
+	font-family: 'Courier New', Courier, monospace;
+	color: rgb(96, 79, 64);
+	text-shadow: 2px 2px 4px rgb(255, 255, 255);
+}
+span{
+	color: rgb(0, 128, 255);
+}

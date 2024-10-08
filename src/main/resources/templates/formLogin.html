@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<link rel="stylesheet"  href="/ingresar.css">
+</head>
+<body>
+	<div class="iniciar">
+		<h2>Inicia sesion</h2>
+		<h3>Mensaje :<span th:text="${mensaje}"></span></h3>
+		<form th:action="@{/login}" method="post">
+			<label for="cuenta">Introduce cuenta</label>
+			<input id="cuenta" name="idCuenta" type="text">
+			</br>
+			<p><input type="submit" value="entrar"></p>
+		</form>
+		
+	</div>
+	
+</body>
+</html>
